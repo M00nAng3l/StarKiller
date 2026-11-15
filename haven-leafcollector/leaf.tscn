@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ppptwu71i41g"]
+
+[ext_resource type="Texture2D" uid="uid://cm72m80pw70le" path="res://images-removebg-preview.png" id="1_p3lty"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ctpa"]
+radius = 73.061615
+
+[node name="Leaf" type="Area2D" unique_id=1831461116 groups=["leaf"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=695345788]
+position = Vector2(104, 85)
+scale = Vector2(0.265, 0.265)
+texture = ExtResource("1_p3lty")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=787107305]
+position = Vector2(99, 85.99999)
+shape = SubResource("CircleShape2D_2ctpa")
